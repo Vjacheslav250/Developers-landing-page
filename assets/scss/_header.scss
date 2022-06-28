@@ -1,12 +1,22 @@
-.header-navbar {
+.header {
   background-color: $color-accent;
   border: 1px solid black;
+  // height: 95px;
 }
 
-.container {
-  max-width: 1170px;
-  margin: 0 auto;
+ul {
+  list-style: none;  
   padding: 0;
-  border: 1px solid black;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
 
-} 
+// .container {
+//   max-width: 1170px;
+//   margin: 0 auto;
+//   padding: 0;
+//   border: 1px solid black;
+
+// } 
