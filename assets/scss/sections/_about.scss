@@ -6,6 +6,7 @@
   background-position: center;
   background-size: cover;
   width: 100%;
+  margin: 0 auto;
 
   
   // position: relative;
@@ -52,8 +53,11 @@
   line-height: 125%;
   color: $color-light-black;
   margin-top: 171px;
-
 }
+.about-content__title span {
+  display: block;
+}
+
 .text-content__title {
   max-width: 432px;
   font-family: 'Montserrat';
@@ -84,6 +88,7 @@
   text-transform: uppercase;
   color: $color-white;
   margin-top: 58px;
+  margin-bottom: 180px;
 
 }
 

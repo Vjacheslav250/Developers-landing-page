@@ -61,9 +61,9 @@ a.nav-link {
 }
 
 .header-menu {
-  max-width: 1190px;
-  padding-left: 10px;
-  padding-right: 10px;
+  max-width: 1195px;
+  padding-left: 12px;
+  padding-right: 12px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -136,10 +136,31 @@ a.nav-link {
 .wrapper {
   max-width: 1920px;
   margin: 0 auto;
+  border: 1px solid black;
 }
 
 .header {
   background-color: #67AEFC;
+}
+
+h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 125%;
+  text-align: center;
+  color: #111111;
+  margin: 0;
+}
+
+h3 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 175%;
+  color: #111111;
 }
 
 ul {
@@ -157,6 +178,7 @@ a {
   background-position: center;
   background-size: cover;
   width: 100%;
+  margin: 0 auto;
   background-repeat: no-repeat;
 }
 
@@ -191,6 +213,10 @@ a {
   line-height: 125%;
   color: #484848;
   margin-top: 171px;
+}
+
+.about-content__title span {
+  display: block;
 }
 
 .text-content__title {
@@ -236,6 +262,7 @@ a {
   text-transform: uppercase;
   color: #FFFFFF;
   margin-top: 58px;
+  margin-bottom: 180px;
 }
 
 .market {
@@ -296,6 +323,209 @@ a {
 .shape-img {
   width: 52.57px;
   height: 52.57px;
+}
+
+.features {
+  max-width: 1920px;
+  background: #DAECFF;
+}
+.features__title {
+  text-align: center;
+  padding-top: 120px;
+  margin-bottom: 81px;
+}
+.features__description {
+  max-width: 1194px;
+}
+.features__content {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+._features {
+  max-width: 1650px;
+  padding-bottom: 109px;
+}
+
+.bag {
+  position: relative;
+  top: 7px;
+  max-width: 230px;
+  text-align: right;
+}
+
+.accordion {
+  margin-bottom: 10px;
+}
+.accordion__title {
+  margin-bottom: 20px;
+}
+
+.accordion-item {
+  background-color: #fff;
+  border: unset;
+}
+.accordion-item:first-of-type {
+  border-bottom-left-radius: unset;
+  border-bottom-right-radius: unset;
+  border-radius: 15px;
+}
+.accordion-item:last-of-type .accordion-button.collapsed {
+  border-bottom-right-radius: unset;
+  border-bottom-left-radius: unset;
+  border-radius: 15px;
+}
+
+.accordion-button {
+  padding: 14.4px 40px;
+  -webkit-transition: unset;
+  -o-transition: unset;
+  transition: unset;
+  font-size: unset;
+  color: unset;
+}
+.accordion-button:not(.collapsed) {
+  color: #111111;
+  background-color: unset;
+  -webkit-box-shadow: unset;
+          box-shadow: unset;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 125%;
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url(/assets/img/backgrounds/Vector.svg);
+  -webkit-transform: rotate(1deg);
+      -ms-transform: rotate(1deg);
+          transform: rotate(1deg);
+  position: relative;
+  top: 8px;
+}
+.accordion-button:not(.collapsed)::before {
+  content: "●";
+  display: block;
+  font-size: 56px;
+  color: #67AEFC;
+  position: relative;
+  top: -3.5px;
+  left: -2px;
+  line-height: 0px;
+  width: 54px;
+  margin: 0;
+  text-align: left;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+.accordion-button:focus {
+  border-color: unset;
+  -webkit-box-shadow: unset;
+          box-shadow: unset;
+}
+.accordion-button::after {
+  background-image: url("/assets/img/backgrounds/ChevronUp.svg");
+  background-size: 25px;
+  width: 25px;
+  height: 25px;
+}
+
+.collapsed::before {
+  content: "●";
+  display: block;
+  font-size: 56px;
+  color: #75E169;
+  position: relative;
+  top: -3.5px;
+  left: -2px;
+  line-height: 0px;
+  width: 54px;
+  padding-right: 20px;
+  margin: 0;
+  text-align: left;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.vr {
+  display: inline-block;
+  -webkit-align-self: stretch;
+      -ms-flex-item-align: stretch;
+          align-self: stretch;
+  width: 1px;
+  min-height: 1em;
+  background-color: black;
+  opacity: unset;
+}
+
+.accordion-body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px 70px 28px 54px;
+  -webkit-align-self: stretch;
+      -ms-flex-item-align: stretch;
+          align-self: stretch;
+}
+
+.accordion-body p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 175%;
+  color: #000000;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.gap-3 {
+  gap: 38.8px !important;
+}
+
+@media (max-width: 898px) {
+  .bag img {
+    display: none;
+  }
+
+  .features__description {
+    max-width: 1194px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .features__content {
+    display: block;
+  }
+
+  .features__title {
+    padding-top: 13px;
+    margin-bottom: 16px;
+  }
+
+  .features__title h2 {
+    font-size: 23px;
+    line-height: 150%;
+  }
+
+  .accordion-item h3 {
+    font-size: 17px;
+  }
+
+  .accordion-button::after {
+    background-size: 29px;
+    width: 31px;
+    height: 31px;
+  }
 }
 
 @media (max-width: 898px) and (min-width: 250px) {
@@ -488,5 +718,68 @@ a {
     padding: 81px 10px 30px 10px;
     background: #67AEFC;
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .accordion-button {
+    padding: 24.4px 14px;
+  }
+
+  .accordion-body {
+    padding: 15px 41px 28px 28px;
+  }
+}
+
+@media (max-width: 375px) {
+  .accordion-button:not(.collapsed) {
+    font-size: 17px;
+    font-weight: 800;
+    line-height: 27px;
+    padding-bottom: 20px;
+  }
+  .accordion-button:not(.collapsed)::after {
+    top: -5px;
+  }
+  .accordion-button:not(.collapsed)::before {
+    font-size: 34px;
+    top: 11.5px;
+  }
+
+  .accordion-item h3 {
+    font-size: 17px;
+  }
+
+  .collapsed::before {
+    font-size: 34px;
+    top: 14px;
+    width: 37px;
+  }
+
+  .accordion-button {
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 24.4px 20px 20px 20px;
+  }
+  .accordion-button::after {
+    height: 26px;
+  }
+
+  .accordion-body {
+    padding-top: 0;
+  }
+  .accordion-body p {
+    font-size: 17px;
+    padding-top: 0;
+  }
+
+  .gap-3 {
+    gap: 28.8px !important;
+  }
+
+  ._features {
+    padding-bottom: 10px;
   }
 }

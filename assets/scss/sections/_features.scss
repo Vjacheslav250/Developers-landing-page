@@ -1,0 +1,228 @@
+.features {
+  max-width: 1920px;
+  background: $color-dark;
+  &__title {
+    text-align: center;
+    padding-top: 120px;
+    margin-bottom: 81px;    
+  } 
+  &__description {
+    max-width: 1194px;
+  }
+  &__content {
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+}
+._features {
+  max-width: 1650px;
+  padding-bottom: 109px; 
+}
+.bag { 
+  position: relative;
+  top: 7px;  
+  max-width: 230px;  
+  text-align: right;
+}
+.accordion {
+  margin-bottom: 10px;
+
+  &__title {    
+    margin-bottom: 20px;
+  }
+}
+
+.accordion-item {
+  background-color: #fff;
+  border: unset;
+
+  &:first-of-type {
+    border-bottom-left-radius: unset;
+    border-bottom-right-radius: unset;
+    border-radius: 15px;
+  }
+
+  &:last-of-type .accordion-button.collapsed {
+    border-bottom-right-radius: unset; 
+    border-bottom-left-radius: unset; 
+    border-radius: 15px;  
+  }
+}
+
+.accordion-button {
+  padding: 14.4px 40px;
+  transition: unset;
+  font-size: unset;
+  color: unset;
+
+  &:not(.collapsed) {
+    color: #111111;
+    background-color: unset;
+    box-shadow: unset;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 125%;  
+
+    &::after {
+      background-image: url(/assets/img/backgrounds/Vector.svg);
+      transform: rotate(1deg);       
+      position: relative;
+      top: 8px; 
+    }
+
+    &::before {
+      content: '\25CF';
+      display: block;  
+      font-size: 56px;
+      color: $color-accent;    
+      position: relative;
+      top: -3.5px;
+      left: -2px;
+      line-height: 0px;
+      width: 54px;     
+      margin: 0;    
+      text-align: left;  
+      transition: 0.4s;  
+    }
+  }
+
+  &:focus {  
+  border-color: unset;  
+  box-shadow: unset;
+  }
+  &::after {  
+    background-image: url('/assets/img/backgrounds/ChevronUp.svg');  
+    background-size: 25px;
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.collapsed::before {
+  content: '\25CF';
+  display: block;  
+  font-size: 56px;
+  color: $color-light;    
+  position: relative;
+  top: -3.5px;
+  left: -2px;
+  line-height: 0px;
+  width: 54px;  
+  padding-right: 20px;
+  margin: 0;    
+  text-align: left;
+  transition: 0.4s;    
+}
+.vr {  
+  display: inline-block;
+  align-self: stretch;
+  width: 1px;
+  min-height: 1em;  
+  background-color: rgba(0, 0, 0, 1);  
+  opacity: unset;   
+}
+.accordion-body {
+  display: flex; 
+  padding: 15px  70px 28px 54px;
+  align-self: stretch;  
+}
+.accordion-body p {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 175%;
+  color: #000000;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.gap-3 {
+  gap: 38.8px !important;
+}
+
+@media (max-width: 898px) {
+  .bag img {
+    display: none;  
+  }
+  .features__description {
+    max-width: 1194px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .features__content {
+    display: block;
+  }
+  .features__title {    
+    padding-top: 13px;
+    margin-bottom: 16px;
+  }
+  .features__title h2 {
+    font-size: 23px;
+    line-height: 150%;    
+  }
+  .accordion-item h3 {
+    font-size: 17px;
+  }  
+  .accordion-button::after {
+    background-size: 29px;
+    width: 31px;
+    height: 31px;
+  } 
+}
+
+@media (max-width: 576px) {
+ .accordion-button {
+    padding: 24.4px 14px;
+  }
+  .accordion-body {
+    padding: 15px 41px 28px 28px;
+  }
+}
+@media (max-width: 375px) {
+  .accordion-button:not(.collapsed) {
+    font-size: 17px;
+    font-weight: 800;    
+    line-height: 27px;
+    padding-bottom: 20px;
+
+    &::after{
+      top: -5px;   
+    }
+    &::before {
+      font-size: 34px;
+      top: 11.5px;
+    }
+  } 
+  .accordion-item h3 {
+    font-size: 17px;
+  }
+  .collapsed::before {
+    font-size: 34px;
+    top: 14px;
+    width: 37px;    
+  }  
+  .accordion-button {
+    align-items: flex-start;
+    padding: 24.4px 20px 20px 20px;
+
+    &::after {
+      height: 26px;
+    }     
+  }
+  .accordion-body {
+    padding-top: 0;
+
+    & p {
+      font-size: 17px;
+      padding-top: 0;
+    }
+  }
+  .gap-3 {
+    gap: 28.8px !important;
+  }
+  ._features {
+    padding-bottom: 10px;
+  }
+}

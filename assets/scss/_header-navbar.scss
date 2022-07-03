@@ -1,5 +1,3 @@
-
-
 /* BURGER MENU */
 @media (max-width: 727px) and (min-width: 250px) {
   .header-navbar__btn {
@@ -16,8 +14,7 @@
     height: 2px;    
     background-color: #000;
     transform: translate(-50%, -50%);
-    transition: all 0.4s ease 0s;  
-        
+    transition: all 0.4s ease 0s;          
   } 
   .header-navbar__btn span:first-child {
     top: 0px;
@@ -28,7 +25,6 @@
   .header-navbar__btn span:nth-of-type(3) {
 	  top: calc(50% + 5px);    
   }  
-
   .header-navbar__btn.active span {    
     display: none;   
     transition: all 0.8s ease 0s;      
@@ -65,8 +61,7 @@
   .nav-item {
     display: block;
     text-align: center;
-  }
- 
+  } 
   .header-navbar__list {
     position: fixed;
     top: 48px;
@@ -78,6 +73,5 @@
     padding: 81px 10px 30px 10px;
     background: $color-accent;
     margin: 0 auto;
-  }
- 
+  } 
 }
