@@ -157,10 +157,19 @@ h2 {
 h3 {
   font-family: "Montserrat";
   font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 125%;
+  color: #000000;
+}
+
+p {
+  font-family: "Montserrat";
+  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 175%;
-  color: #111111;
+  color: #000000;
 }
 
 ul {
@@ -173,6 +182,134 @@ a {
   text-decoration: none;
 }
 
+.slider {
+  background-image: url(/assets/img/backgrounds/3.png);
+  background-position: center;
+  background-size: cover;
+  max-width: 1920px;
+}
+
+.slider__title {
+  max-width: 1198px;
+  margin: 0 auto;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.slider__title h2 {
+  padding-top: 123px;
+  margin-bottom: 82px;
+}
+
+.card {
+  max-width: 694px;
+  margin: 0 auto;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: unset;
+  -webkit-box-direction: unset;
+  -webkit-flex-direction: unset;
+      -ms-flex-direction: unset;
+          flex-direction: unset;
+  min-height: 391px;
+  border: 2px solid #67AEFC;
+  border-radius: 15px;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.item-img {
+  max-width: 300px;
+}
+
+.card-img {
+  position: relative;
+  top: 9px;
+  right: 17px;
+}
+
+.card-body {
+  max-width: 390px;
+  padding: 15px 25px 10px 68px;
+}
+
+.card-body span {
+  display: block;
+}
+
+.card-body h3 {
+  margin-bottom: 21px;
+}
+
+.card-text {
+  line-height: 140%;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  color: black;
+  text-align: center;
+  background: 0 0;
+  border: 2px solid #67AEFC;
+  border-radius: 15px;
+  opacity: unset;
+  -webkit-transition: opacity 0.15s ease;
+  -o-transition: opacity 0.15s ease;
+  transition: opacity 0.15s ease;
+}
+
+.carousel-control-next-icon {
+  background-image: url(/assets/img/slides/next.svg);
+}
+
+.carousel-control-prev-icon {
+  background-image: url(/assets/img/slides/prev.svg);
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100% 100%;
+}
+
+.control-panel {
+  max-width: 150px;
+  margin: 0 auto;
+  position: relative;
+  top: 84px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 .about {
   background-image: url(/assets/img/backgrounds/1.png);
   background-position: center;
@@ -475,19 +612,6 @@ a {
           align-self: stretch;
 }
 
-.accordion-body p {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 175%;
-  color: #000000;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
 .gap-3 {
   gap: 38.8px !important;
 }
@@ -517,7 +641,7 @@ a {
     line-height: 150%;
   }
 
-  .accordion-item h3 {
+  .accordion-item p {
     font-size: 17px;
   }
 
@@ -547,6 +671,26 @@ a {
   .header-logo__link img {
     width: 85%;
     height: 85%;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    min-height: 615px;
+  }
+
+  .card-img {
+    position: unset;
+    width: inherit;
+  }
+
+  .card-body p {
+    font-size: 17px;
+    line-height: 175%;
   }
 }
 
@@ -732,6 +876,34 @@ a {
 }
 
 @media (max-width: 375px) {
+  .card {
+    -webkit-align-content: space-between;
+        -ms-flex-line-pack: justify;
+            align-content: space-between;
+  }
+
+  .slider__title h2 {
+    font-size: 23px;
+    line-height: 150%;
+    padding-top: 42px;
+    margin-bottom: 20px;
+  }
+
+  .card-body {
+    padding: 0px 22px 10px 29px;
+  }
+  .card-body h3 {
+    margin-top: 23px;
+    margin-bottom: 0;
+  }
+
+  .item-img {
+    padding-bottom: 30px;
+  }
+
+  .img-5 {
+    height: 249.88px;
+  }
   .accordion-button:not(.collapsed) {
     font-size: 17px;
     font-weight: 800;
@@ -744,10 +916,6 @@ a {
   .accordion-button:not(.collapsed)::before {
     font-size: 34px;
     top: 11.5px;
-  }
-
-  .accordion-item h3 {
-    font-size: 17px;
   }
 
   .collapsed::before {

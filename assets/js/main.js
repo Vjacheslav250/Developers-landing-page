@@ -1,4 +1,4 @@
-
+// MENU BURGER //
 $(document).ready(() => {
 
   $('.header-navbar__btn').on('click', function () {
@@ -9,7 +9,6 @@ $(document).ready(() => {
   });
 
 });
-
 $(document).ready(function () {
 
   $('.header-navbar__btn').on('click', function () {
@@ -18,6 +17,11 @@ $(document).ready(function () {
   });
 
 });
+
+// SLIDER //
+
+let myCarousel = document.querySelector('#myCarousel')
+let carousel = new bootstrap.Carousel(myCarousel)
 
 
 
