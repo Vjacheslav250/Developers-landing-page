@@ -1,8 +1,13 @@
 .slider {
-  background-image: url(/assets/img/backgrounds/3.png);  
-  background-position: center;
-  background-size: cover;  
-  max-width: 1920px;    
+  
+  background-image: url(/assets/img/backgrounds/shape-wave.png), url(/assets/img/backgrounds/shape-2.png);  
+  // background-position: center;
+  // background-size: cover;  
+  background-position: 1545px 789px, 186px 126px;
+  max-width: 1920px;  
+  min-height: 908px; 
+  background-attachment: local;
+  background-repeat: no-repeat;
 }
 .slider__title {
   max-width: 1198px; 
@@ -88,6 +93,17 @@
   justify-content: space-between;
 }
 
+@media (max-width: 1200px) {
+  .slider {
+    background-position: 950px 789px, 45px 52px;
+  }
+}
+@media (max-width: 993px) {
+  .slider {
+    background-position: 750px 789px, 60px 52px;
+  }
+}
+
 @media (max-width: 768px) {
   .card {
     justify-content: center;    
@@ -101,6 +117,11 @@
     font-size: 17px;
     line-height: 175%;
   }  
+}
+@media (max-width: 576px) {
+  .slider {
+    background-position: 750px 789px, 0px 30px;
+  }
 }
 @media (max-width: 375px) {
   .card {
@@ -125,7 +146,24 @@
   .img-5 {
     height: 249.88px;
   }
+
+  .slider {
+    min-height: 880px;
+    background-size: 38.86px;
+    background-position: 750px 789px, -14px 22px;
+  }
+  .control-panel {
+    max-width: 227px;
+  }
+
+  .carousel-control-next, .carousel-control-prev {
+    position: relative;
+    top: -60px;
+  }
 }
+
+
+  
  
 
 
