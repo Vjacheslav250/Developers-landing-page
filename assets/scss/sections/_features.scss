@@ -49,27 +49,13 @@
   }
   
 }
-
-// .accordion-item p {
-//   font-family: 'Montserrat';
-//  font-style: normal;
-//  font-weight: 400;
-//  font-size: 18px;
-//  line-height: 175%;
-//   /* identical to box height, or 32px */
-
-
-//   color: #111111;
-
-// }
-
 .accordion-button {
   padding: 14.4px 40px;
   transition: unset;
   font-size: unset;
   color: unset;
 
-  &:not(.collapsed) {  //h3//
+  &:not(.collapsed) { 
     color: #111111;
     background-color: unset;
     box-shadow: unset;
@@ -140,18 +126,6 @@
   padding: 15px  70px 28px 54px;
   align-self: stretch;  
 }
-// .accordion-body p {
-//   font-family: 'Montserrat';
-//   font-style: normal;
-//   font-weight: 400;
-//   font-size: 18px;
-//   line-height: 175%;
-//   color: #000000;
-//   margin-top: 0;
-//   margin-bottom: 0;
-//   padding-top: 10px;
-//   padding-bottom: 10px;
-// }
 .gap-3 {
   gap: 38.8px !important;
 }
@@ -237,3 +211,14 @@
     padding-bottom: 10px;
   }
 }
+@media (max-width: 342px) {
+  .accordion-body {
+    padding: 15px 17px 28px 28px;
+  }
+}
+@media (max-width: 319px) {
+  .vr {
+    display: none;
+  }
+}
+

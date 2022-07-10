@@ -46,7 +46,7 @@
             </ul>
           </nav>
         </div>
-        <div class="button">
+        <div class="button header__button">
           <a class="button__lt" href="#">Заказать</a>
         </div>
       </div>
@@ -168,10 +168,11 @@
                   </div>
                 </div>
               </div>
+
               <div class="accordion" id="accordionPanelsStayOpenExample">
                 <div class="accordion-item">
                   <p class="accordion-header" id="panelsStayOpen-heading">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    <button class="accordion-button collapsed mob" type="button" data-bs-toggle="collapse"
                       data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false"
                       aria-controls="panelsStayOpen-collapseOne">
                       Дизайн десктопной версии
@@ -195,7 +196,7 @@
               <div class="accordion" id="accordionPanelsStayOpenExample">
                 <div class="accordion-item">
                   <p class="accordion-header" id="panelsStayOpen-heading">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    <button class="accordion-button collapsed mob" type="button" data-bs-toggle="collapse"
                       data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false"
                       aria-controls="panelsStayOpen-collapseOne">
                       Пользовательский интерфейс
@@ -221,7 +222,7 @@
               <div class="accordion" id="accordionPanelsStayOpenExample">
                 <div class="accordion-item">
                   <p class="accordion-header" id="panelsStayOpen-heading">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    <button class="accordion-button collapsed mob" type="button" data-bs-toggle="collapse"
                       data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false"
                       aria-controls="panelsStayOpen-collapseOne">
                       Микро UX
@@ -253,12 +254,15 @@
         </div>
       </div>
     </section>
+
+
     <section class="slider">
       <div class="container _slider">
         <div class="slider__title">
           <h2>Этапы разработки интернет-магазина</h2>
-          <div id="carouselExampleControls" class="carousel slide" data-bs-interval="2000">
+          <div id="card-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
             <div class="carousel-inner">
+
               <div class="carousel-item active">
                 <div class="card">
                   <div class="card-body">
@@ -268,9 +272,8 @@
                       провести анализ других предложений рынка, оценить конкурентов и найти наиболее удобное решение.
                     </p>
                   </div>
-                  <div class="item-img">
-                    <img src="assets/img/slides/top-right.png" class="card-img" width="250px" height="250px"
-                      alt="top-right">
+                  <div class="item-imag">
+                    <img src="assets/img/slides/top-right.png" class="card-img" alt="top-right">
                   </div>
                 </div>
               </div>
@@ -283,9 +286,8 @@
                       для пользователя сайт.
                     </p>
                   </div>
-                  <div class="item-img">
-                    <img src="assets/img/slides/cake.png" class="card-img" width="227px" height="222px"
-                      alt=" top-right">
+                  <div class="item-imag imag-2">
+                    <img src="assets/img/slides/cake.png" class="card-img " alt=" top-right">
                   </div>
                 </div>
               </div>
@@ -299,9 +301,8 @@
                       ошибок.
                     </p>
                   </div>
-                  <div class="item-img">
-                    <img src="assets/img/slides/scan-barcode.png" class="card-img" width="250px" height="253px" alt="
-                      top-right">
+                  <div class="item-imag">
+                    <img src="assets/img/slides/scan-barcode.png" class="card-img" alt="top-right">
                   </div>
                 </div>
 
@@ -316,9 +317,8 @@
                       ассортиментом.
                     </p>
                   </div>
-                  <div class="item-img">
-                    <img src="assets/img/slides/group.png" class="card-img" width="250px" height="205.1px" alt="
-                      top-right">
+                  <div class="item-imag">
+                    <img src="assets/img/slides/group.png" class="card-img" alt="top-right">
                   </div>
                 </div>
               </div>
@@ -332,22 +332,18 @@
                       ошибок и их устранения.
                     </p>
                   </div>
-                  <div class="item-img">
-                    <img src="assets/img/slides/top-left.png" class="card-img img-5" width="277.45px" height="287.44px"
-                      alt="
-                      top-right">
+                  <div class="item-imag">
+                    <img src="assets/img/slides/top-left.png" class="card-img img-5" alt="top-right">
                   </div>
                 </div>
               </div>
             </div>
             <div class="control-panel">
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="prev">
+              <button class="carousel-control-prev" type="button" data-bs-target="#card-carousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Предыдущий</span>
               </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="next">
+              <button class="carousel-control-next" type="button" data-bs-target="#card-carousel" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Следующий</span>
               </button>
@@ -356,88 +352,168 @@
         </div>
       </div>
     </section>
-  </div>
+    <section class="gallery" id="gallery">
+      <div class="gallery__container">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h2 class="gallery__title">Примеры онлайн-магазинов</h2>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row justify-content-md-center">
 
-  <section class="gallery" id="gallery">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <h2 class="gallery__title">What we do with love</h2>
+            <!-- =====carousel===== -->
+            <div id="carouselExampleControls" class="carousel slide" data-bs-interval="false">
+              <div class="carousel-inner">
+                <div class="carousel-item active not-active">
+
+                  <article class="gallery-item col-lg-6 col-md-6">
+                    <div class="gallery-item__wrapper">
+                      <img class="gallery-item__image" src="assets/img/gallery/shopping-cart.png" alt="gallery image">
+                      <div class="gallery-item__caption">
+                        <h3 class="gallery-item__title">Онлайн-магазин</h3>
+                        <a href="#" class="gallery-item__link">для оптовых покупок</a>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="gallery-item col-lg-6 col-md-6">
+                    <div class="gallery-item__wrapper">
+                      <img class="gallery-item__image" src="assets/img/gallery/babys-breath.png" alt="gallery image">
+                      <div class="gallery-item__caption">
+                        <h3 class="gallery-item__title">Онлайн-магазин</h3>
+                        <a href="#" class="gallery-item__link">для флористов</a>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="gallery-item col-lg-6 col-md-6">
+                    <div class="gallery-item__wrapper">
+                      <img class="gallery-item__image" src="assets/img/gallery/group-136.png" alt="gallery image">
+                      <div class="gallery-item__caption">
+                        <h3 class="gallery-item__title">Онлайн-магазин</h3>
+                        <a href="#" class="gallery-item__link">для парикмахеров</a>
+                      </div>
+                    </div>
+                  </article>
+
+                </div>
+
+                <div class="carousel-item not-active">
+
+                  <article class="gallery-item col-lg-6 col-md-6">
+                    <div class="gallery-item__wrapper">
+                      <img class="gallery-item__image" src="assets/img/gallery/pexels-shiny-diamond.png"
+                        alt="gallery image">
+                      <div class="gallery-item__caption">
+                        <h3 class="gallery-item__title">Онлайн-магазин</h3>
+                        <a href="#" class="gallery-item__link">для визажистов</a>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="gallery-item col-lg-6 col-md-6">
+                    <div class="gallery-item__wrapper">
+                      <img class="gallery-item__image" src="assets/img/gallery/deva-williamson.png" alt="gallery image">
+                      <div class="gallery-item__caption">
+                        <h3 class="gallery-item__title">Онлайн-магазин</h3>
+                        <a href="#" class="gallery-item__link">для кондитеров</a>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="gallery-item col-lg-6 col-md-6">
+                    <div class="gallery-item__wrapper">
+                      <img class="gallery-item__image" src="assets/img/gallery/color-palette-catalogue.png"
+                        alt="gallery image">
+                      <div class="gallery-item__caption">
+                        <h3 class="gallery-item__title">Онлайн-магазин</h3>
+                        <a href="#" class="gallery-item__link">для художников</a>
+                      </div>
+                    </div>
+                  </article>
+
+                </div>
+              </div>
+
+              <div class="control-panel active">
+                <button class="carousel-control-prev not-active-prev" type="button"
+                  data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Предыдущий</span>
+                </button>
+                <button class="carousel-control-next not-active-next " type="button"
+                  data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Следующий</span>
+                </button>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="advantages" id="advantages">
+
+      <div class="advantages__content">
+        <div class="shap__imag">
+          <img class="shape-shap" src="assets/img/backgrounds/shape.png" alt="shape">
+        </div>
+        <div class="advantages__title">
+
+
+          <div class="advantages__text">
+            <h2>Необходимо больше информации?</h2>
+
+            <div class="group__imag">
+              <img src="assets/img/backgrounds/group-155.png" alt="group">
+            </div>
+
+            <p class="advantages__description">Если Вы владелец онлайн-магазина или только начинаете свой путь в
+              электронной
+              коммерции и вам нужен уникальный дизайн онлайн магазина для стартапа, обратитесь к нашему веб дизайнеру.
+              За выгодную цену и короткий период времени, он поможет визуализировать ваш веб проект.</p>
+          </div>
+
+          <div class="advantages__button">
+            <div class="button">
+              <a class="button-btn" href="#">Оставить заявку</a>
+            </div>
+
+          </div>
 
         </div>
-      </div>
-    </div>
-
-    <div class="container-fluid">
-      <div class="row justify-content-md-center">
-
-
-        <article class="gallery-item col-lg-6 col-md-6">
-          <div class="gallery-item__wrapper">
-            <img class="gallery-item__image" src="assets/img/gallery/shopping-cart.png" alt="gallery image">
-            <div class="gallery-item__caption">
-              <h3 class="gallery-item__title">Онлайн-магазин</h3>
-              <a href="#" class="gallery-item__link">для оптовых покупок</a>
-            </div>
+        <div>
+          <div class="advantages-image">
+            <img src="assets/img/backgrounds/orders-1.png" class="advantages-imag" alt="orders">
           </div>
-        </article>
 
-        <article class="gallery-item col-lg-6 col-md-6">
-          <div class="gallery-item__wrapper">
-            <img class="gallery-item__image" src="assets/img/gallery/babys-breath.png" alt="gallery image">
-            <div class="gallery-item__caption">
-              <h3 class="gallery-item__title">Онлайн-магазин</h3>
-              <a href="#" class="gallery-item__link">для флористов</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="gallery-item col-lg-6 col-md-6">
-          <div class="gallery-item__wrapper">
-            <img class="gallery-item__image" src="assets/img/gallery/group-136.png" alt="gallery image">
-            <div class="gallery-item__caption">
-              <h3 class="gallery-item__title">Онлайн-магазин</h3>
-              <a href="#" class="gallery-item__link">для парикмахеров</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="gallery-item col-lg-6 col-md-6">
-          <div class="gallery-item__wrapper">
-            <img class="gallery-item__image" src="assets/img/gallery/pexels-shiny-diamond.png" alt="gallery image">
-            <div class="gallery-item__caption">
-              <h3 class="gallery-item__title">Онлайн-магазин</h3>
-              <a href="#" class="gallery-item__link">для визажистов</a>
-            </div>
-          </div>
-        </article>
+        </div>
 
 
 
-        <article class="gallery-item col-lg-6 col-md-6">
-          <div class="gallery-item__wrapper">
-            <img class="gallery-item__image" src="assets/img/gallery/deva-williamson.png" alt="gallery image">
-            <div class="gallery-item__caption">
-              <h3 class="gallery-item__title">Онлайн-магазин</h3>
-              <a href="#" class="gallery-item__link">для кондитеров</a>
-            </div>
-          </div>
-        </article>
 
-        <article class="gallery-item col-lg-6 col-md-6">
-          <div class="gallery-item__wrapper">
-            <img class="gallery-item__image" src="assets/img/gallery/color-palette-catalogue.png" alt="gallery image">
-            <div class="gallery-item__caption">
-              <h3 class="gallery-item__title">Онлайн-магазин</h3>
-              <a href="#" class="gallery-item__link">для художников</a>
-            </div>
-          </div>
-        </article>
 
 
       </div>
-    </div>
-  </section>
+
+
+
+
+
+
+
+    </section>
+
+  </div>
+
 
 
 
