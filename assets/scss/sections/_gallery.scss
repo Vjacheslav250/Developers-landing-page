@@ -147,6 +147,12 @@ a.gallery-item__link  {
     margin-top: 14.37px;
   }
 }
+@media (max-width: 375px) {
+  .gallery-item {
+    padding: 0px 4.5px 15px; 
+  } 
+
+}
 
 
 

@@ -13,13 +13,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    align-items: center;  
+    align-items: center;      
   }
-
   &__title {
     max-width: 673px;   
     text-align: left;
-    margin-top: 10px;  
+    margin-top: 10px;      
   
     & h2 {
       text-align: left;
@@ -30,7 +29,6 @@
     margin-top: 53px;
     line-height: 140%;
   }
-
 }
 .advantages-image {   
   margin-left: 37.56px;  
@@ -46,13 +44,13 @@
 }
 .shap__imag {  
   background-repeat: no-repeat;  
-  max-width: 60px;  
+  max-width: 195px;  
   background-position: 100px 100px;  
   position: relative;
-  top: -205px;
-  left: 9px;
-  flex-grow: 0.37;  
-  margin-right: 30px;
+  top: -198px;
+  left: 6px;
+  flex-grow: 0.37;   
+  margin-right: 30px;  
 
   & img {
     height: 60px;
@@ -105,20 +103,18 @@
     }
   }
 }
-
 @media (max-width: 768px) {
   .shap__imag {
     top: 0px;
     left: 0px;
   }
 }
-
 @media (max-width: 375px) {
   .advantages__title {
     max-width: 335px;
     margin-top: 4px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto;    
 
     & h2 {
       font-weight: 800;
@@ -159,7 +155,6 @@
     }
   }
 }
-
 @media (max-width: 339px) {
   .shap__imag {
     top: -16px;
