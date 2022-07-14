@@ -195,7 +195,7 @@ placeholder {
 }
 
 .slider {
-  background-image: url(assets/img/backgrounds/shape-wave.png), url(assets/img/backgrounds/shape-2.png);
+  background-image: url(../img/backgrounds/shape-wave.png), url(../img/backgrounds/shape-2.png);
   background-position: 1545px 789px, 186px 126px;
   max-width: 1920px;
   min-height: 908px;
@@ -295,11 +295,11 @@ placeholder {
 }
 
 .carousel-control-next-icon {
-  background-image: url(/assets/img/slides/next.svg);
+  background-image: url(../img/slides/next.svg);
 }
 
 .carousel-control-prev-icon {
-  background-image: url(/assets/img/slides/prev.svg);
+  background-image: url(../img/slides/prev.svg);
 }
 
 .carousel-control-next-icon, .carousel-control-prev-icon {
@@ -324,7 +324,7 @@ placeholder {
           justify-content: space-between;
 }
 .about {
-  background-image: url(../assets/img/backgrounds/1.png);
+  background-image: url(../img/backgrounds/1.png);
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -988,7 +988,7 @@ a.gallery-item__link {
   margin-bottom: 13px;
 }
 .footer-tel li::before {
-  background: url(/assets/img/icons/brands_viber.svg);
+  background: url(../img/icons/brands_viber.svg);
   background-size: 24px 24px;
   content: "";
   background-repeat: no-repeat;
@@ -1263,7 +1263,7 @@ a.gallery-item__link {
     margin-right: auto;
   }
   .contacts__imag-1 {
-    background-image: url(/assets/img/backgrounds/postpaid.png);
+    background-image: url(../img/backgrounds/postpaid.png);
     max-width: 386px;
     max-height: 391px;
     background-repeat: no-repeat;
@@ -1563,7 +1563,7 @@ a.gallery-item__link {
     padding: 0;
   }
   .about {
-    background-image: url(assets/img/backgrounds/ill.svg);
+    background-image: url(../img/backgrounds/ill.svg);
     background-size: 375px 545px;
     background-position: 0px 28px;
     background-repeat: no-repeat;
@@ -1673,7 +1673,7 @@ a.gallery-item__link {
   }
 
   .shap__imag {
-    background-image: url(assets/img/backgrounds/shape-2.png);
+    background-image: url(../img/backgrounds/shape-2.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

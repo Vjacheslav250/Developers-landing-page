@@ -1,5 +1,5 @@
 .slider {  
-  background-image: url(assets/img/backgrounds/shape-wave.png), url(assets/img/backgrounds/shape-2.png); 
+  background-image: url(../img/backgrounds/shape-wave.png), url(../img/backgrounds/shape-2.png); 
   background-position: 1545px 789px, 186px 126px;
   max-width: 1920px;  
   min-height: 908px; 
@@ -73,10 +73,10 @@
   transition: opacity .15s ease;
 }
 .carousel-control-next-icon {
-  background-image: url(/assets/img/slides/next.svg);
+  background-image: url(../img/slides/next.svg);
 }
 .carousel-control-prev-icon {
-  background-image: url(/assets/img/slides/prev.svg);
+  background-image: url(../img/slides/prev.svg);
 }.carousel-control-next-icon, .carousel-control-prev-icon {
   display: inline-block;
   width: 2rem;

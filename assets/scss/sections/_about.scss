@@ -1,5 +1,5 @@
 .about {  
-  background-image: url(../assets/img/backgrounds/1.png);
+  background-image: url(../img/backgrounds/1.png);
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -61,7 +61,7 @@
 }
 @media (max-width: 375px) {
   .about {  
-    background-image: url(assets/img/backgrounds/ill.svg);
+    background-image: url(../img/backgrounds/ill.svg);
     background-size: 375px 545px;
     background-position: 0px 28px;
     background-repeat: no-repeat;  
