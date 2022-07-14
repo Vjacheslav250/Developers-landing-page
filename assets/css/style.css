@@ -490,7 +490,7 @@ placeholder {
   line-height: 125%;
 }
 .accordion-button:not(.collapsed)::after {
-  background-image: url(/assets/img/backgrounds/Vector.svg);
+  background-image: url(../img/backgrounds/Vector.svg);
   -webkit-transform: rotate(1deg);
       -ms-transform: rotate(1deg);
           transform: rotate(1deg);
@@ -519,7 +519,7 @@ placeholder {
           box-shadow: unset;
 }
 .accordion-button::after {
-  background-image: url("/assets/img/backgrounds/ChevronUp.svg");
+  background-image: url("../img/backgrounds/ChevronUp.svg");
   background-size: 25px;
   width: 25px;
   height: 25px;

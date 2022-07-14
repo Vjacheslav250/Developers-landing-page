@@ -64,7 +64,7 @@
     line-height: 125%;  
 
     &::after {
-      background-image: url(/assets/img/backgrounds/Vector.svg);
+      background-image: url(../img/backgrounds/Vector.svg);
       transform: rotate(1deg);       
       position: relative;
       top: 8px; 
@@ -91,7 +91,7 @@
   box-shadow: unset;
   }
   &::after {  
-    background-image: url('/assets/img/backgrounds/ChevronUp.svg');  
+    background-image: url('../img/backgrounds/ChevronUp.svg');  
     background-size: 25px;
     width: 25px;
     height: 25px;
