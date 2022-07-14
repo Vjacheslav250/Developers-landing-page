@@ -85,7 +85,6 @@
       transition: 0.4s;  
     }
   }
-
   &:focus {  
   border-color: unset;  
   box-shadow: unset;
@@ -97,7 +96,6 @@
     height: 25px;
   }
 }
-
 .collapsed::before {
   content: '\25CF';
   display: block;  
@@ -129,7 +127,6 @@
 .gap-3 {
   gap: 38.8px !important;
 }
-
 @media (max-width: 898px) {
   .bag img {
     display: none;  
@@ -159,7 +156,6 @@
     height: 31px;
   } 
 }
-
 @media (max-width: 576px) {
  .accordion-button {
     padding: 24.4px 14px;
