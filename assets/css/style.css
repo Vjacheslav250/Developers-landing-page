@@ -136,7 +136,6 @@ a.nav-link {
 .wrapper {
   max-width: 1920px;
   margin: 0 auto;
-  border: 1px solid black;
 }
 
 .header {
@@ -329,14 +328,13 @@ placeholder {
   background-position: center;
   background-size: cover;
   width: 100%;
+  height: 100%;
   margin: 0 auto;
   background-repeat: no-repeat;
 }
 
 .container__title {
   max-width: 1190px;
-  padding-left: 10px;
-  padding-right: 10px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -353,6 +351,11 @@ placeholder {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.about__title {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .about-content__title {
@@ -409,66 +412,9 @@ placeholder {
   margin-top: 58px;
 }
 
-.market {
-  position: relative;
-  top: -388px;
-  left: -126px;
+.about__button {
+  margin-bottom: 180px;
 }
-
-.market-img {
-  width: 122%;
-}
-
-.shape-wave {
-  position: relative;
-  top: -200px;
-  left: -15px;
-  z-index: -1;
-}
-
-.shape-wave-img {
-  width: 190px;
-  height: 70px;
-}
-
-.ellips {
-  position: relative;
-  top: 4px;
-  z-index: -1;
-}
-
-.ellips-img {
-  width: 149px;
-  height: 183px;
-}
-
-.layer {
-  position: relative;
-  top: -115px;
-  left: 67px;
-  z-index: -1;
-}
-
-.layer-img {
-  width: 171px;
-  height: 63px;
-}
-
-.shape {
-  background-position: 0px 0px;
-  background-repeat: no-repeat;
-  width: 52.57px;
-  height: 52.57px;
-  position: absolute;
-  top: 250px;
-  left: 251px;
-}
-
-.shape-img {
-  width: 52.57px;
-  height: 52.57px;
-}
-
 .features {
   max-width: 1920px;
   background: #DAECFF;
@@ -842,13 +788,12 @@ a.gallery-item__link {
   display: none;
 }
 .contacts {
-  border: 1px solid red;
   background: #DAECFF;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 150px 42px 90px 42px;
+  padding: 150px 152px 90px 42px;
   min-height: 774px;
   -webkit-box-align: center;
   -webkit-align-items: center;
@@ -893,7 +838,7 @@ a.gallery-item__link {
   text-align: center;
   position: relative;
   top: -56px;
-  left: 0px;
+  left: 54px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -984,11 +929,127 @@ a.gallery-item__link {
 .footer {
   background-color: #64ABF9;
   min-height: 469px;
-  border: 1px solid black;
+}
+.footer__fluide {
+  max-width: 1217px;
+  margin: 0 auto;
+  margin-left: auto;
+  text-align: unset;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 0;
+}
+.footer__top {
+  padding-top: 99px;
+}
+.footer__bottom {
+  max-width: 1920px;
+  margin: auto;
+  padding-left: 16px;
+  padding-top: 115px;
+  padding-bottom: 79px;
+}
+.footer__contacts {
+  display: grid;
+  grid-template-areas: "hd mn rg" "nv mn rg";
+  grid-auto-columns: 438px 360px 1fr;
+}
+.footer__imag {
+  max-width: 280px;
+}
+.footer__imag img {
+  grid-area: hd;
+  width: 100%;
+}
+.footer__social {
+  max-width: 280px;
+  margin-top: 38px;
+  grid-area: nv;
+  text-align: center;
 }
 
-.footer__fluide {
-  margin-top: 0;
+.footer-tel a, .footer-email a {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.footer-tel {
+  grid-area: mn;
+  padding-right: 10px;
+  margin-right: 30px;
+  position: relative;
+  margin-top: 25px;
+}
+.footer-tel li {
+  margin-bottom: 13px;
+}
+.footer-tel li::before {
+  background: url(/assets/img/icons/brands_viber.svg);
+  background-size: 24px 24px;
+  content: "";
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  display: block;
+  position: absolute;
+  left: -33px;
+  margin-top: 3px;
+}
+
+.footer-email {
+  grid-area: rg;
+  padding-left: 10px;
+  padding-right: 15px;
+  position: relative;
+  margin-top: 25px;
+}
+
+.text-center a {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 175%;
+  color: #FFFFFF;
+}
+
+.bi-whatsapp {
+  font-size: 25.3px;
+  color: #FFFFFF;
+}
+
+.bi-instagram {
+  font-size: 25.3px;
+  color: #FFFFFF;
+  margin-right: 31.43px;
+}
+
+._icon-fb {
+  vertical-align: 4px;
+  margin-right: 31.43px;
+}
+
+._icon-fb img {
+  height: 26px;
+}
+
+._icon-telegram {
+  vertical-align: 4px;
+  margin-right: 31.43px;
+}
+
+._icon-viber {
+  vertical-align: 4px;
+  margin-right: 31.43px;
+}
+
+._blank {
+  font-size: 18px;
+  line-height: 175%;
 }
 
 @media (max-width: 1200px) {
@@ -1046,6 +1107,19 @@ a.gallery-item__link {
 @media (max-width: 993px) {
   .slider {
     background-position: 750px 789px, 60px 52px;
+  }
+}
+
+@media (max-width: 992px) {
+  .footer__contacts {
+    grid-auto-columns: unset;
+    justify-items: center;
+    grid-template-areas: "hd mn" "nv mn" "nv rg";
+  }
+
+  .footer-email {
+    padding-left: 0;
+    padding-right: 137px;
   }
 }
 
@@ -1197,6 +1271,40 @@ a.gallery-item__link {
   }
   .contacts__imag-1 img {
     opacity: 0;
+  }
+  .footer__fluide {
+    margin-top: 0;
+  }
+
+  .footer__contacts {
+    grid-auto-columns: unset;
+    justify-items: center;
+    grid-template-areas: "hd" "mn" "nv" "rg";
+    grid-template-rows: 70px 130px 100px 100px;
+  }
+
+  .footer__top {
+    padding-top: 46px;
+  }
+
+  .footer-tel {
+    padding-right: 20px;
+    margin-left: 55px;
+    margin-right: 0;
+  }
+
+  .footer-tel li:nth-of-type(2) a {
+    word-spacing: 38px;
+  }
+
+  .footer-tel li:nth-of-type(3) a {
+    word-spacing: 15px;
+  }
+
+  .footer__bottom {
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -1407,6 +1515,10 @@ a.gallery-item__link {
   .contacts-button button {
     margin-top: 15px;
   }
+  .footer-tel a, .footer-email a {
+    font-size: 16px;
+    line-height: 140%;
+  }
 }
 
 @media (max-width: 375px) {
@@ -1449,6 +1561,35 @@ a.gallery-item__link {
 
   .slider__title {
     padding: 0;
+  }
+  .about {
+    background-image: url(/assets/img/backgrounds/ill.svg);
+    background-size: 375px 545px;
+    background-position: 0px 28px;
+    background-repeat: no-repeat;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .about__title {
+    margin-top: 146px;
+  }
+
+  .about-content h1 {
+    font-weight: 800;
+    font-size: 27px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #000000;
+  }
+
+  .text-content__title span {
+    display: block;
+  }
+
+  .about__button {
+    margin-top: 35px;
+    margin-bottom: 51px;
   }
   .accordion-button:not(.collapsed) {
     font-size: 17px;
@@ -1547,6 +1688,113 @@ a.gallery-item__link {
     opacity: 0;
     width: 100%;
   }
+  .footer__container .row > * {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .footer-tel {
+    padding-right: 20px;
+    margin-left: 34px;
+    margin-right: 0;
+  }
+
+  .footer__imag {
+    max-width: 300px;
+  }
+
+  .footer__contacts {
+    grid-template-rows: 70px 130px 100px 74px;
+  }
+
+  .footer__social {
+    max-width: 266px;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 37px;
+    margin-top: 55px;
+    grid-template-areas: "fb tg vib ig wp";
+  }
+
+  .footer-email {
+    margin-top: 30px;
+    padding-right: 98px;
+  }
+
+  .footer__bottom {
+    padding-top: 0;
+    max-width: 250px;
+  }
+
+  .text-center a {
+    font-size: 14px;
+  }
+
+  .footer-tel li:nth-of-type(2) a {
+    word-spacing: 30px;
+  }
+
+  .footer-tel li:nth-of-type(3) a {
+    word-spacing: 10px;
+  }
+
+  .bi-whatsapp {
+    grid-area: wp;
+    font-size: 30.3px;
+  }
+
+  .bi-instagram {
+    grid-area: ig;
+    margin-right: 0px;
+    font-size: 28px;
+  }
+
+  .bi-instagram::before {
+    vertical-align: 0.1em;
+  }
+
+  .bi-whatsapp::before {
+    vertical-align: 0.15em;
+  }
+
+  ._icon-fb {
+    grid-area: fb;
+    background-image: url(/assets/img/icons/fb.svg);
+    background-repeat: no-repeat;
+    background-size: 33px 34px;
+    margin-right: 0px;
+  }
+
+  ._icon-fb img {
+    opacity: 0;
+    width: 30px;
+    height: 27px;
+  }
+
+  ._icon-telegram {
+    grid-area: tg;
+    background-image: url(/assets/img/icons/tg.svg);
+    background-repeat: no-repeat;
+    background-size: 33px 33px;
+    margin-right: 0;
+  }
+
+  ._icon-telegram img {
+    opacity: 0;
+    width: 33px;
+    height: 35px;
+  }
+
+  ._icon-viber {
+    grid-area: vib;
+    margin-right: 20.43px;
+    margin-right: 0;
+  }
+
+  ._icon-viber img {
+    width: 34px;
+    height: 34px;
+  }
 }
 
 @media (max-width: 342px) {
@@ -1565,5 +1813,15 @@ a.gallery-item__link {
 @media (max-width: 319px) {
   .vr {
     display: none;
+  }
+}
+
+@media (max-width: 280px) {
+  .footer-tel li:nth-of-type(3) a {
+    word-spacing: 0px;
+  }
+
+  .footer-tel {
+    padding-right: 0;
   }
 }

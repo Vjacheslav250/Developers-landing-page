@@ -1,11 +1,10 @@
-.contacts {
-  border: 1px solid red;
+.contacts {  
   background: $color-dark;
   display: flex; 
-  padding: 150px 42px 90px 42px;
-  min-height: 774px;  
+  padding: 150px 152px 90px 42px;
+  min-height: 774px;    
   align-items: center;
-  justify-content: center;
+    justify-content: center;
 
   &__title {
     text-align: center;
@@ -42,7 +41,7 @@
     text-align: center;
     position: relative;
     top: -56px;
-    left: 0px;
+    left: 54px;
     object-fit: cover;
   
     & img {

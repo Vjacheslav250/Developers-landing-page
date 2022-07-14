@@ -1,49 +1,24 @@
-.about {
-  // background: url(/assets/img/backgrounds/Ellipse-2.png);
+.about {  
   background-image: url(/assets/img/backgrounds/1.png);
-  // background-position: right bottom 133px;
-
   background-position: center;
   background-size: cover;
   width: 100%;
-  margin: 0 auto;
-
-  
-  // position: relative;
-  // top: 20px;
-  // left: 15px;
+  height: 100%;
+  margin: 0 auto; 
   background-repeat: no-repeat;
-  // background
-
-  // display: flex;
-  // min-height: 766px;
-
 }
 .container__title {
-  // min-height: 766px;
-
-
-  max-width: 1190px;   
-  padding-left: 10px;
-  padding-right: 10px;
+  max-width: 1190px; 
   display: flex;
   align-items: center;  
   flex-wrap: wrap;
   margin: 0 auto;   
-  justify-content: space-between;
-  // border: 1px solid black;
-
-  
-  
+  justify-content: space-between;  
 }
-// .about__title {
-//   // min-height: 766px;
-//   // padding-bottom: 235px;
-  
-//   border: 1px solid black;
-//   // margin-bottom: 200px;
-  
-// }
+.about__title {
+  padding-left: 20px;
+  padding-right: 20px;  
+}
 .about-content__title {
   max-width: 838px;  
   margin-top: 171px;
@@ -51,7 +26,6 @@
 .about-content__title span {
   display: block;
 }
-
 .text-content__title {
   max-width: 432px;
   font-family: 'Montserrat';
@@ -61,7 +35,6 @@
   line-height: 140%;
   color: $color-black;
   margin-top: 20px;
-
 }
 .button-btn {
   max-width: 270px;
@@ -81,85 +54,35 @@
   align-items: center;
   text-transform: uppercase;
   color: $color-white;
-  margin-top: 58px;
-  // margin-bottom: 180px;
-
+  margin-top: 58px;  
 }
-
-// ----Картинки-----------//
-
-.market {
-  position: relative;
-  top: -388px;
-  left: -126px;
-  // width: 509px;
-  // height: 499px;
-
-
+.about__button {
+  margin-bottom: 180px;
 }
-
-.market-img {
-  width: 122%;
-  // height: 499px;
+@media (max-width: 375px) {
+  .about {  
+    background-image: url(/assets/img/backgrounds/ill.svg);
+    background-size: 375px 545px;
+    background-position: 0px 28px;
+    background-repeat: no-repeat;  
+    width: 100%;
+    overflow: hidden;
+  }
+  .about__title {
+    margin-top: 146px;  
+  }
+  .about-content h1 {
+    font-weight: 800;
+    font-size: 27px;
+    line-height: 120%;    
+    text-transform: uppercase;    
+    color: #000000;    
+  }
+  .text-content__title span {
+    display: block;
+  }
+  .about__button {
+    margin-top: 35px;
+    margin-bottom: 51px;
+  }
 }
-
-.shape-wave {
-  position: relative;
-  top: -200px;
-  left: -15px;
-  z-index: -1;
-}
-.shape-wave-img {
-  width: 190px;
-  height: 70px;
-}
-
-.ellips {
-  position: relative;
-  top: 4px;
-  // left: 37px;
-  z-index: -1;
-}
-.ellips-img {
-  width: 149px;
-  height: 183px;
-}
-.layer {
-  position: relative;
-  top: -115px;
-  left: 67px;
-  z-index: -1;
-}
-.layer-img {
-  width: 171px;
-  height: 63px;
-}
-.shape {
- 
-  // background-image: url(/assets/img/backgrounds/shape.png);
-
-  background-position: 0px 0px;
-  background-repeat: no-repeat;
-
-  // border: 1px solid black;
-
-  width: 52.57px;
-  height: 52.57px;
-
-
-
-  position: absolute;
-  top: 250px;
-  left: 251px;
-  // z-index: -1;
-}
-.shape-img {
-  width: 52.57px;
-  height: 52.57px;
-}
-
-
-
-
-
-// ----Картинки-----------//

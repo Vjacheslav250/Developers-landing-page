@@ -18,10 +18,9 @@ $(document).ready(function () {
 
 });
 
-// SLIDER //
 
-// let myCarousel = document.querySelector('#myCarousel')
-// let carousel = new bootstrap.Carousel(myCarousel)
+
+
 
 
 
